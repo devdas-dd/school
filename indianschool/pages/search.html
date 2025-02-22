@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="assets/css/pages/search.css">
+</head>
+<body>
+
+<header>
+    <h1>Search Results</h1>
+    <p id="search-query"></p>
+</header>
+
+<section id="results-container">
+    <p>Loading results...</p>
+</section>
+
+<script>
+    // Function to get URL parameters
+    function getQueryParam(param) {
+        let params = new URLSearchParams(window.location.search);
+        return params.get(param);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let query = getQueryParam("q");
+        document.getElementById("search-query").innerText = `Results for: "${query}"`;
+
+        // Example: Simulating search results (Replace this with actual search logic)
+        let resultsContainer = document.getElementById("results-container");
+        resultsContainer.innerHTML = `
+            <ul>
+                <li><a href="about.html">About Our School</a></li>
+                <li><a href="admissions.html">Admissions Process</a></li>
+                <li><a href="academics.html">Academics Information</a></li>
+            </ul>
+        `;
+    });
+</script>
+
+</body>
+</html>

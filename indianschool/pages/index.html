@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Indian School of Excellence - Premier educational institution offering quality education from preschool to senior secondary">
+    
+    <!-- Title -->
+    <title>Home | Indian School of Excellence</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../assets/css/base/variables.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" as="font" crossorigin>
+
+    <!-- CSS Organization -->
+    <!-- Base -->
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/globals.css">
+    
+    <!-- Layouts -->
+    <link rel="stylesheet" href="../assets/css/layouts/grid.css">
+    <link rel="stylesheet" href="../assets/css/layouts/sidebar.css">
+
+    <!-- Components -->
+    <link rel="stylesheet" href="../assets/css/components/navbar.css">
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    
+    <!-- Pages -->
+    <link rel="stylesheet" href="../assets/css/pages/home.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Scripts (Moved to Bottom of Body in Production) -->
+</head>
+<body>
+<body>
+    <header class="header">
+        <!-- Logo & School Name Section -->
+        <div class="top-header">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="../assets/images/logos/pic.png" alt="Indian School Logo" class="logo">
+                    <h1 class="school-name">GOURAV'S SCHOOL OF EXCELLENCE</h1>
+                </div>
+                
+                    <button 
+                            class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar">
+                            <span class="hamburger"></span>
+                            <span class="hamburger"></span>
+                            <span class="hamburger"></span>
+                    </button>
+            </div>
+        </div>
+    
+        <!-- Navigation Section -->
+        <div class="bottom-header">
+            <nav class="navbar" id="navbar" aria-label="Main navigation">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+        
+                        <!-- About Dropdown -->
+                        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" aria-label="About dropdown" role="button" id="aboutDropdown">About</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="aboutDropdown">
+                                <li><a href="about/why-choose-us.html" role="menuitem">Why Choose Us</a></li>
+                                <li><a href="about/life-at-indianschool.html" role="menuitem">Life at Indian School</a></li>
+                                <li><a href="about/leadership.html" role="menuitem">Leadership</a></li>
+                                <li><a href="about/awards-achievements.html" role="menuitem">Awards & Achievements</a></li>
+                                <li><a href="about/affiliations-accreditation.html" role="menuitem">Affiliations & Accreditation</a></li>
+                                <li><a href="about/mandatory-disclosure.html" role="menuitem">Mandatory Disclosure</a></li>
+                            </ul>
+                        </li>
+        
+                        <!-- Academics Dropdown -->
+                        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" aria-label="Academics dropdown" role="button" id="academicsDropdown">Academics</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="academicsDropdown">
+                                <li><a href="academics/faculty.html" role="menuitem">Faculty</a></li>
+                                <li><a href="academics/curriculum.html" role="menuitem">Curriculum</a></li>
+                                <li><a href="academics/qasdc.html" role="menuitem">Curriculum Quality Assurance</a></li>
+                                <li><a href="academics/tests-examinations.html" role="menuitem">Tests & Examinations</a></li>
+                                <li><a href="academics/year-planner.html" role="menuitem">Year Planner</a></li>
+                                <li><a href="academics/cbse-results.html" role="menuitem">CBSE Results</a></li>
+                                <li><a href="academics/parent-teacher-meetings.html" role="menuitem">Parent-Teacher Meetings</a></li>
+                            </ul>
+                        </li>
+        
+                        <!-- Campus Dropdown -->
+                        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" aria-label="Campus dropdown" role="button" id="campusDropdown">Campus</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="campusDropdown">
+                                <li><a href="campus/facilities.html" role="menuitem">Facilities</a></li>
+                                <li><a href="campus/transport.html" role="menuitem">Transport</a></li>
+                                <li><a href="campus/sargam-fest.html" role="menuitem">Sargam Fest</a></li>
+                            </ul>
+                        </li>
+        
+                        <!-- Beyond Academics Dropdown -->
+                        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" aria-label="Beyond Academics dropdown" role="button" id="beyondDropdown">Beyond Academics</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="beyondDropdown">
+                                <li><a href="beyond-academics/extra-curricular.html" role="menuitem">Extra-Curricular Activities</a></li>
+                                <li><a href="beyond-academics/student-corner.html" role="menuitem">Student Corner</a></li>
+                                <li><a href="beyond-academics/social-outreach.html" role="menuitem">Social Outreach</a></li>
+                            </ul>
+                        </li>
+        
+                        <!-- Admissions Dropdown -->
+                        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" aria-label="Admissions dropdown" role="button" id="admissionsDropdown">Admissions</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="admissionsDropdown">
+                                <li><a href="admissions/pre-school.html" role="menuitem">Pre-School</a></li>
+                                <li><a href="admissions/grade-wise-admissions.html" role="menuitem">Grade-Wise Admissions</a></li>
+                                <li><a href="admissions/admission-process.html" role="menuitem">Admission Process</a></li>
+                                <li><a href="admissions/fee-structure.html" role="menuitem">Fee Structure</a></li>
+                            </ul>
+                        </li>
+        
+                        <li><a href="news.html">News</a></li>
+        
+                        <!-- Contact Dropdown -->
+                        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" aria-label="Contact dropdown" role="button" id="contactDropdown">Contact</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="contactDropdown">
+                                <li><a href="contact/inquiry-form.html" role="menuitem">Inquiry Form</a></li>
+                                <li><a href="contact/location-directions.html" role="menuitem">Location & Directions</a></li>
+                                <li><a href="contact/help-desk.html" role="menuitem">Help Desk</a></li>
+                            </ul>
+                        </li>
+        
+                        <li><a href="events.html">Upcoming Events</a></li>
+                    </ul>
+        
+                         <!-- Search Section -->
+                        <div class="search-container">
+                                 <button class="search-icon" 
+                                    id="searchIcon" 
+                                    aria-label="Open search dialog"
+                                    aria-haspopup="dialog">
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </button>
+                        </div>
+
+                        <!-- Search Overlay -->
+                        <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search dialog" aria-hidden="true">
+                            <div class="search-box">
+                                <input type="text" id="searchInput" placeholder="Search..." aria-label="Search website">
+                                <button id="searchClose" aria-label="Close search dialog">
+                                    <i class="fas fa-times" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-slider">
+        <div class="slider">
+            <div class="slide"><img src="../assets/images/slider/slide1.jpg" alt="School Campus"></div>
+            <div class="slide"><img src="../assets/images/slider/slide2.jpg" alt="Classroom Activities"></div>
+            <div class="slide"><img src="../assets/images/slider/slide3.jpg" alt="Annual Fest"></div>
+            <div class="slide"><img src="../assets/images/slider/slide1.jpg" alt="School Campus"></div>
+            <div class="slide"><img src="../assets/images/slider/slide2.jpg" alt="Classroom Activities"></div>
+            <div class="slide"><img src="../assets/images/slider/slide3.jpg" alt="Annual Fest"></div>
+        </div>
+        <button class="arrow prev" aria-label="Previous Slide">&#10094;</button>
+        <button class="arrow next" aria-label="Next Slide">&#10095;</button>
+        <div class="pagination"></div>
+    </section>
+
+    <div class="separator" style="height: 50px; background-color: #f1f1f1; margin: 0 auto;"></div>
+
+    <section class="about-school" style="display: flex; align-items: center; height: 400px; margin: 0 190px;">
+        <div class="about-text" style="flex: 1; padding-right: 20px;">
+            <h2>About Indian School</h2>
+            <p>Indian School is committed to providing high-quality education with a focus on overall student development. Our institution blends academic excellence with extracurricular activities to nurture future leaders.</p>
+            <p>Our well-equipped campus, experienced faculty, and innovative curriculum ensure a holistic learning experience.</p>
+        </div>
+        <div class="about-image" style="flex: 1; text-align: right;">
+            <img src="assets/images/about-school.jpg" alt="About Indian School" style="max-width: 100%; height: auto; border-radius: 10px;">
+        </div>
+    </section> 
+    
+    <section class="stats-section" style="display: flex; justify-content: space-between; margin: 50px 190px;">
+        <div class="stat-box" style="height: 90px; width: 260px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+            <h3>STUDENT</h3>
+            <p>3,274+</p>
+        </div>
+        <div class="stat-box" style="height: 90px; width: 260px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+            <h3>STAFF</h3>
+            <p>172+</p>
+        </div>
+        <div class="stat-box" style="height: 90px; width: 260px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+            <h3>YEARS OF EXCELLENCE</h3>
+            <p>50+</p>
+        </div>
+        <div class="stat-box" style="height: 90px; width: 260px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+            <h3>Student-Teacher Ratio</h3>
+            <p>25 : 1</p>
+        </div>
+    </section>
+    <section class="about-school" style="margin: 50px 190px; text-align: center;">
+        <h2>Indian School</h2>
+        <p>Indian School is a co-educational institution and is affiliated to Central Board of Secondary Education.</p>
+        <div class="cards" style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <div class="card" style="width: 30%; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+                <h3>Vision</h3>
+                <p>Our vision is to provide holistic education to students.</p>
+            </div>
+            <div class="card" style="width: 30%; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+                <h3>Mission</h3>
+                <p>Our mission is to nurture future leaders.</p>
+            </div>
+            <div class="card" style="width: 30%; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+                <h3>Motto</h3>
+                <p>"Knowledge, Integrity, Excellence"</p>
+            </div>
+        </div>
+    </section>
+    <section class="academic-programme" style="margin: 50px 190px; text-align: center;">
+        <h2>Our Academic Programme</h2>
+        <div class="cards" style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <div class="card" style="width: 30%; padding: 20px; background: #f8f9fa; border-radius: 10px; text-align: center;">
+                <img src="assets/images/academics/primary.jpg" alt="Primary Division" style="width: 100%; border-radius: 10px;">
+                <h3>Primary Division</h3>
+            </div>
+            <div class="card" style="width: 30%; padding: 20px; background: #f8f9fa; border-radius: 10px; text-align: center;">
+                <img src="assets/images/academics/secondary.jpg" alt="Secondary Division" style="width: 100%; border-radius: 10px;">
+                <h3>Secondary Division</h3>
+            </div>
+            <div class="card" style="width: 30%; padding: 20px; background: #f8f9fa; border-radius: 10px; text-align: center;">
+                <img src="assets/images/academics/senior-secondary.jpg" alt="Senior Secondary Division" style="width: 100%; border-radius: 10px;">
+                <h3>Senior Secondary Division</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities-slider" style="margin: 50px 190px; text-align: center;">
+        <h2>Explore Our Different Facilities</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="slide-content">
+                <h3>Art Room</h3>
+                <p>The art room at Indian School transcends a classroom, transforming into a vibrant haven for creative expression.</p>
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = [
+            { title: "Art Room", description: "The art room at Indian School transcends a classroom, transforming into a vibrant haven for creative expression." },
+            { title: "Auditorium", description: "An air-conditioned auditorium with a capacity to seat 1000 people with state-of-the-art acoustics." },
+            { title: "Playground", description: "The school has two basketball courts and a football court of international dimensions." },
+            { title: "Science Laboratories", description: "Well-equipped modern laboratories of Physics, Chemistry, and Biology promote scientific temper." },
+            { title: "Computer Labs", description: "Indian School has three computer labs and 130 computers accessible to students." },
+            { title: "Mathematics Lab", description: "A Math lab has been set up to enrich the teaching of Mathematics at the school level." },
+            { title: "Atal Tinkering Lab", description: "ATL promotes creative, innovative mindsets in students." }
+        ];
+        function updateSlide() {
+            document.querySelector(".slide-content h3").textContent = slides[currentSlide].title;
+            document.querySelector(".slide-content p").textContent = slides[currentSlide].description;
+        }
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlide();
+        }
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlide();
+        }
+    </script>
+
+
+    <section class="gallery-section" style="margin: 50px 190px; text-align: center;">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-card">
+                <button class="prev" onclick="prevImage(0)">&#10094;</button>
+                <img src="assets/images/gallery1.jpg" alt="Gallery Image 1" class="gallery-image">
+                <button class="next" onclick="nextImage(0)">&#10095;</button>
+            </div>
+            <div class="gallery-card">
+                <button class="prev" onclick="prevImage(1)">&#10094;</button>
+                <img src="assets/images/gallery2.jpg" alt="Gallery Image 2" class="gallery-image">
+                <button class="next" onclick="nextImage(1)">&#10095;</button>
+            </div>
+            <div class="gallery-card">
+                <button class="prev" onclick="prevImage(2)">&#10094;</button>
+                <img src="assets/images/gallery3.jpg" alt="Gallery Image 3" class="gallery-image">
+                <button class="next" onclick="nextImage(2)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const galleryImages = [
+            ["assets/images/gallery1.jpg", "assets/images/gallery4.jpg", "assets/images/gallery7.jpg"],
+            ["assets/images/gallery2.jpg", "assets/images/gallery5.jpg", "assets/images/gallery8.jpg"],
+            ["assets/images/gallery3.jpg", "assets/images/gallery6.jpg", "assets/images/gallery9.jpg"]
+        ];
+        
+        let galleryIndex = [0, 0, 0];
+        
+        function updateGallery(index) {
+            document.querySelectorAll(".gallery-card img")[index].src = galleryImages[index][galleryIndex[index]];
+        }
+        
+        function prevImage(index) {
+            galleryIndex[index] = (galleryIndex[index] - 1 + galleryImages[index].length) % galleryImages[index].length;
+            updateGallery(index);
+        }
+        
+        function nextImage(index) {
+            galleryIndex[index] = (galleryIndex[index] + 1) % galleryImages[index].length;
+            updateGallery(index);
+        }
+    </script>
+<script defer src="../assets/js/scripts/components/dropdown.js"></script>
+<script defer src="../assets/js/scripts/components/slider.js"></script>
+
+
+
+    <!-- Main JavaScript -->
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/scripts/components/search.js"></script>
+    <script defer src="../assets/js/scripts/mobile-menu.js"></script>
+
+
+
+</body>
+</html>
